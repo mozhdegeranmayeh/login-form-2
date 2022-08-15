@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>login form</title>
+    <link rel="stylesheet" href="style2.css" />
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=2" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <form action="/action_page.php">
+        <div class="row">
+          <i class="material-icons">account_circle</i>
+          <h2>Login</h2>
+          <h5>How do I get staeted blazein dolor at?</h5>
+          <div class="col">
+            <img src="2.jfif" class="fb btn" />
+            <div class="center">
+              Build your team and improve yourself with the blazein app
+            </div>
+          </div>
+
+          <div class="col1">
+            <div class="hide-md-lg">
+              <p>Or sign in manually:</p>
+            </div>
+            <label for="">Email</label>
+            <input type="text" name="username" placeholder="Email" required />
+
+            <label for="psw">password</label>
+            <input
+              type="password"
+              placeholder="Password"
+              id="psw"
+              name="psw"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              required
+            />
+            <label
+              style="
+                display: flex;
+                position: absolute;
+                margin-left: 0.5cm;
+                margin-top: 0.3cm;
+              "
+              >Remember me</label
+            >
+            <input
+              type="checkbox"
+              checked="checked"
+              name="subscribe"
+              style="
+                display: flex;
+                position: absolute;
+                margin-left: -18cm;
+                margin-top: 0.4cm;
+              "
+            />
+
+            <h4 style="text-align: right; margin-top: 0.4cm">
+              <a href="#">forget your password?</a>
+            </h4>
+            <div>
+              <input type="submit" value="Login" />
+            </div>
+
+            <input
+              type="submit"
+              value="Register"
+              style="
+                color: rgb(111, 36, 209);
+                font-weight: bold;
+                background-color: white;
+              "
+            />
+            <i
+              class="fa fa-google"
+              style="
+                position: absolute;
+                z-index: 1;
+                padding-top: 0.5cm;
+                padding-left: 2.8cm;
+              "
+            ></i>
+            <input
+              type="submit"
+              value="sign in with google"
+              style="
+                color: black;
+                font-weight: bold;
+                background-color: white;
+                padding-left: 1.1cm;
+              "
+            />
+            <i
+              class="fa fa-facebook"
+              style="
+                position: absolute;
+                z-index: 1;
+                padding-top: 0.5cm;
+                padding-left: 2.8cm;
+              "
+            ></i>
+            <input
+              type="submit"
+              value="sign in with facebook"
+              style="
+                color: black;
+                font-weight: bold;
+                background-color: white;
+                padding-left: 1.5cm;
+              "
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="javascript2.js"></script>
+  </body>
+</html>
