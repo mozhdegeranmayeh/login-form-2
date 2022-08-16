@@ -1,0 +1,274 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  position: relative;
+  padding: 0.25% 0 0;
+  background-color: rgb(209, 209, 247);
+}
+
+/* Style the container */
+.container {
+  width: 85%;
+  height: 14cm;
+  background-color: white;
+  position: relative;
+  border-radius: 0.5cm;
+  padding: 3% 0 0;
+  margin: 5% 7%;
+}
+
+.material-icons {
+  position: absolute;
+  margin-left: -68%;
+  margin-top: -7%;
+}
+
+/* Style inputs, select elements and textareas */
+input[type="text"] {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-left: 2.5cm;
+}
+
+input[type="password"] {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-left: 2.5cm;
+  margin-bottom: 0.5cm;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  width: 40%;
+  background-color: #7323c8;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid rgb(164, 160, 169);
+  border-radius: 20px;
+  cursor: pointer;
+  float: left;
+  margin-left: 9%;
+}
+
+input[type="checkbox"] {
+  display: flex;
+  position: absolute;
+
+  margin-left: 6rem;
+}
+
+button[type="button"] {
+  width: 40%;
+  color: rgb(12, 10, 10);
+  padding: 12px 20px;
+  border: 1px solid rgb(128, 125, 131);
+  border-radius: 20px;
+  cursor: pointer;
+  float: left;
+  margin-left: 9%;
+}
+
+button[type="button"]:hover {
+  border: 2px solid #8c76ea;
+}
+
+input[type="text"]:hover {
+  border: 2px solid #8c76ea;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(9, 111, 9);
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  position: relative;
+  bottom: 13.4cm;
+  right: 3cm;
+  float: right;
+  width: 500px;
+  height: 500px;
+
+  border-radius: 25px;
+  border: none;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.form-check-label {
+  position: absolute;
+  margin-left: 3cm;
+}
+
+span {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin-left: 20%;
+  opacity: 0.5;
+}
+
+p {
+  display: inline-block;
+  margin-left: 7.5%;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+h4 {
+  display: inline;
+  margin-left: 7.5%;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  margin-left: 9cm;
+  margin-top: -0.25cm;
+  padding-bottom: 0.25cm;
+}
+
+.fa {
+  position: absolute;
+  z-index: 1;
+  padding-top: 0.35cm;
+  padding-left: 5.2cm;
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  width: 22%;
+  text-align: center;
+  font-size: 30px;
+  margin-left: 20cm;
+  color: white;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5cm;
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Floating column for labels: 25% width */
+.col-6 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-6 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-6,
+  .col-6,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  img,
+  .center {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input[type="submit"] {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input[type="password"] {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  button[type="button"] {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input[type="checkbox"] {
+    margin-left: 0.4cm;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  label {
+    font-size: 13px;
+    margin-left: 0.5cm;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-check-label {
+    font-size: 13px;
+    margin-left: 0.85cm;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 13px;
+    margin-left: 4cm;
+    margin-top: 0.001cm;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .material-icons {
+    position: absolute;
+    margin-top: -1.7cm;
+    margin-left: -8.9cm;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fa {
+    position: absolute;
+    margin-top: 0.67cm;
+    margin-left: -3.9cm;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  span {
+    text-align: center;
+  }
+}
