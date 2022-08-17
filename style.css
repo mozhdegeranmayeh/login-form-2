@@ -9,7 +9,7 @@ body {
 /* Style the container */
 .container {
   width: 85%;
-  height: 14cm;
+  height: 34rem;
   background-color: white;
   position: relative;
   border-radius: 0.5cm;
@@ -84,18 +84,22 @@ input[type="text"]:hover {
   border: 2px solid #8c76ea;
 }
 
+input[type="password"]:hover {
+  border: 2px solid #8c76ea;
+}
+
 input[type="submit"]:hover {
   background-color: rgb(9, 111, 9);
 }
 
 /* add appropriate colors to fb, twitter and google buttons */
 .fb {
-  position: relative;
-  bottom: 13.4cm;
-  right: 3cm;
+  position: absolute;
+  width: 30vw;
+
+  bottom: 10%;
+  right: 5vw;
   float: right;
-  width: 500px;
-  height: 500px;
 
   border-radius: 25px;
   border: none;
@@ -152,7 +156,7 @@ a {
   width: 22%;
   text-align: center;
   font-size: 30px;
-  margin-left: 20cm;
+  margin-left: 54.1vw;
   color: white;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
@@ -182,8 +186,7 @@ a {
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-6,
-  .col-6,
-  input[type="submit"] {
+  .col-6 {
     width: 100%;
     margin-top: 0;
   }
@@ -196,29 +199,18 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  input[type="submit"] {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  input[type="text"] {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
+  input[type="submit"],
+  input[type="text"],
   input[type="password"] {
-    width: 100%;
-    margin-left: 0;
+    width: 90%;
+    margin-left: 5%;
   }
 }
 
 @media screen and (max-width: 600px) {
   button[type="button"] {
-    width: 100%;
-    margin-left: 0;
+    width: 90%;
+    margin-left: 5%;
     margin-top: 10%;
   }
 }
@@ -246,7 +238,7 @@ a {
 @media screen and (max-width: 600px) {
   a {
     font-size: 13px;
-    margin-left: 4cm;
+    margin-left: 60%;
     margin-top: 0.001cm;
   }
 }
@@ -254,16 +246,16 @@ a {
 @media screen and (max-width: 600px) {
   .material-icons {
     position: absolute;
-    margin-top: -1.7cm;
-    margin-left: -8.9cm;
+    margin-top: -4rem;
+    margin-left: -2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .fa {
     position: absolute;
-    margin-top: 0.67cm;
-    margin-left: -3.9cm;
+    margin-top: 10%;
+    margin-left: -45%;
   }
 }
 
